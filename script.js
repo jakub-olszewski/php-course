@@ -51,14 +51,17 @@ function createExamples(dzial,title,start, stop){
     document.write('<button type="button" class="collapsible">'+title+'</button>');
     var positions = 3;
 
-    document.write('<div class="content"><p>');
+    document.write('<div class="content">');
     for(var i = start ; i<=stop ; i++)
     {
         //count zeros
         var countZeros = positions-String(i).length;
-        document.write("<a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a><br><br>");
+        var colorLine = i%2==0?"odd":"even";
+        var github = '<a href="https://github.com/jakub-olszewski/php-course/blob/main/e'+getZeros(countZeros)+i+'/index.php"><img class="github-button" src="github.png" alt="github" ></a>';
+
+        document.write("<div class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div  class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='e"+getZeros(countZeros)+i+"/source.php';\"><code>Źródło kodu</code></button></div></div>");
     }
-    document.write('</p></div>');
+    document.write('</div>');
 }
 
 function createExample(dzial,title,startStop){

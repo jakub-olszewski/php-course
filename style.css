@@ -171,8 +171,76 @@ h6 {
 }
 
 .content {
-  padding: 0 10px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-clip: padding-box;
+}
+
+.line {
+  height: 45px;
+  display: block;
+  /* background: rgb(255, 255, 255); */
+  /* color: #000; */
+  /* padding: 10px 0; */
+  /* text-align: center; */
+  /* margin-bottom: 5px;
+  margin-top: 5px; */
+}
+
+.line-left {
+  float:left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.line-right {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.color-odd {
+  background-color: rgb(228, 228, 228);
+}
+
+.color-even {
+  background-color: rgb(218, 218, 218);
+}
+
+.source-button {
+  display: inline-block;
+  height: 25px;
+  -webkit-appearance: none;
+  padding: .2rem .5rem;
+  font-size: smaller; 
+  border: 1px solid #ccc; 
+  background-color: rgba(211, 211, 211, 0.527);
+  /* border-radius: 4px; */
+}
+
+.github-button {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 16px;
+}
+
+.classroom-button {
+
+  margin-top: 25px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+.me-photo {
+  border-radius: 50% !important;
+  width: 64px;
+  height: 64px;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+  border:2px solid rgb(225, 230, 255);
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
 }

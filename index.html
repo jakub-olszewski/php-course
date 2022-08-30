@@ -29,21 +29,34 @@
         </script>
     </head>
     <body>
-        <h1>ZSE Pracownia aplikacji internetowych</h1>
-        <h3>Nauczyciel: Jakub Olszewski</h3>      
-        <button style="background: #0a73bd;margin-bottom: 15px;
-" onclick="location.href='https://github.com/jakub-olszewski/php-course/archive/refs/heads/main.zip';">Pobierz wszystko</button>
-
-        <button style="background: rgb(117,201,33);margin-bottom: 15px;" onClick="location.href='https://www.apachefriends.org/pl/download.html';" alt="XAMPP Download">Pobierz XAMPP</button>
-        <br><br>
+        
+        <table style="text-align: left;width:100%;border: 1px solid white ">
+            <tr>
+              <th style="text-align: left;width:3%;border: 1px solid white ;"><img class="me-photo" src="me.jfif" alt="Jakub Olszewski" ></th>
+              <th>
+                <div class="line-left">
+                    <h2 style="margin: 5px;">ZSE PHP Pracownia Aplikacji Internetowych</h2>
+                    <h3 style="margin: 5px;">Nauczyciel: Jakub Olszewski</h3> 
+                </div>
+              </th>
+            </tr>
+          </table>
+        <div class="line">
+            <div class="line-left" style="height: 30px;">
+                <button style="background: #0a73bd;" onclick="location.href='https://github.com/jakub-olszewski/php-course/archive/refs/heads/main.zip';">Pobierz wszystko</button>
+                <button style="background: rgb(117,201,33);" onClick="location.href='https://www.apachefriends.org/pl/download.html';" alt="XAMPP Download">Pobierz XAMPP</button>
+            </div>
+        </div>
+        <br>
         <script>
 		
 			title("Wprowadzenie i struktura języka PHP");
 				createExamples(1,'Blok instrukcji PHP',1,4);
 				createExamples(1,'Blok PHP w kodzie HTML',5,5);
 			title("Składania języka PHP");
-				createExamples(2,'Zmienne',6,6);
-				createExamples(2,'Typy danych',7,25);
+				createExamples(2,'Komentarze',6,6);
+				createExamples(2,'Zmienne',7,25);
+                createExamples(2,'Typy danych',7,25);
 				
 /**
             title("Struktura języka JavaScript");
