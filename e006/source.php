@@ -23,8 +23,9 @@
 	<body style="overflow: hidden;">
 
 		<h3 style="margin-left: 30px;">
+			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="history.back()"><</button>
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="location.href='index.php';">Wykonaj</button>
-			<code>Plik: <?php echo getcwd(); ?>/index.php</code>
+			<font size="+2"><?php echo $_GET['title'] ?></font><code style="margin-left: 20px;">Plik: <?php echo getcwd(); ?>/index.php</code>
 		</h3>
 
 		<textarea id='editor'>

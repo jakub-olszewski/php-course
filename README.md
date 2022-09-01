@@ -1,3 +1,3 @@
 # php-course
 
-Xcopy /E /I e068 e069
+Xcopy /E /I e006 e007

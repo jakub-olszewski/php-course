@@ -36,7 +36,8 @@ function createExercise(dzial,start, stop){
     {
         //count zeros
         var countZeros = positions-String(i).length;
-        document.write("<div class='collapsible-todo'><a href='x"+getZeros(countZeros)+i+"/index.php'><i>Ćwiczenie "+dzial+"."+i+"</i></a></div>");
+        var title = dzial;//+"."+i;
+        document.write("<div class='collapsible-todo'><a href='x"+getZeros(countZeros)+i+"/index.php?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
     }
 }
 
@@ -59,7 +60,7 @@ function createExamples(dzial,title,start, stop){
         var colorLine = i%2==0?"odd":"even";
         var github = '<a href="https://github.com/jakub-olszewski/php-course/blob/main/e'+getZeros(countZeros)+i+'/index.php"><img class="github-button" src="github.png" alt="github" ></a>';
 
-        document.write("<div class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div  class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='e"+getZeros(countZeros)+i+"/source.php';\"><code>Źródło kodu</code></button></div></div>");
+        document.write("<div class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='e"+getZeros(countZeros)+i+"/source.php?title="+encodeURI(title)+"'\"><code>Źródło kodu</code></button></div></div>");
     }
     document.write('</div>');
 }
