@@ -244,3 +244,10 @@ h6 {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
 }
+
+code {
+  color:#06c000;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}

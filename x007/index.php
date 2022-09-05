@@ -11,14 +11,19 @@
         <div style="margin: 50px">
             <h1>Ćwiczenie <?php echo ( empty($_GET["number"]) ) ? '' : htmlspecialchars($_GET["number"]) ?></h1>
             <p>
-                Utwórz poniższy napis wypełniają odpowiednie dane : <code>nazwaSzkoly, ulica, numer, kod, miejscowosc, telefon</code>
-                <br>Należy stworzyć dwa pliki *.php. Pierwszy zawierający tylko kod PHP drugi zaś z osadzonym kodem PHP w kodzie HTML.
-                <br>W przeglądarce powinna wyświetlić się następującą treść:
+                Napisz skrypt zmieniający numer dnia na jego nazwę.
+                <br>W kodzie wykorzystaj instrukcję sterującą <code>switch</code>.
+                <br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>.
                 <br><br>
-                Szkoła: [<code>nazwaSzkoly</code>]<br>
-                Adres: [<code>ulica, numer, kod, miejscowosc</code>]<br>
-                Telefon: [<code>telefon</code>]<br>
-            </p>
+                Przykład:
+                <br>
+                <code>
+                    <br>$numer = 2;
+                    <br>...
+                </code>
+                <br><br>Wynik wykonania:<br>
+                <br>Wtorek.
+            </p><code></code>
             <br><a href='./answer/index.php'>Odpowiedź</a>
         </div>
     </body>

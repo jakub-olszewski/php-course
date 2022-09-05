@@ -1,3 +1,24 @@
+window.onresize = doALoadOfStuff;
+
+function doALoadOfStuff() {
+    console.log(window.innerWidth);
+    var elements = document.getElementsByName('breakline');
+
+    for(var i = 0; i < elements.length; i++) {
+        var value = elements[i].innerHTML;
+
+        if(window.innerWidth < 1024 && !value.startsWith('<br>')){  
+            elements[i].innerHTML = '<br>' + value;
+        };
+        if(window.innerWidth >= 1024 && value.startsWith('<br>')){ 
+            elements[i].innerHTML = value.substring(4);
+        };
+    };
+
+
+};
+
+
 /**
  * Metody 
  **/

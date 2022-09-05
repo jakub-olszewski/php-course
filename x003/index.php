@@ -10,14 +10,13 @@
     <body>
         <div style="margin: 50px">
             <h1>Ćwiczenie <?php echo ( empty($_GET["number"]) ) ? '' : htmlspecialchars($_GET["number"]) ?></h1>
-            <p>
-                Utwórz poniższy napis wypełniają odpowiednie dane : <code>nazwaSzkoly, ulica, numer, kod, miejscowosc, telefon</code>
-                <br>Należy stworzyć dwa pliki *.php. Pierwszy zawierający tylko kod PHP drugi zaś z osadzonym kodem PHP w kodzie HTML.
-                <br>W przeglądarce powinna wyświetlić się następującą treść:
+            <p><code></code>
+                Utwórz tablicę (indeksowaną oraz asocjacyjną z kluczem numer miesiąca => wartość nazwa miesiąca) miesięcy 
+                <br>Na początku kodu należy użyć komentarza blokowego zawierającego imię oraz nazwisko.
+                <br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>.
+                <br>W przeglądarce powinna się wyświetlić następująca treść :
                 <br><br>
-                Szkoła: [<code>nazwaSzkoly</code>]<br>
-                Adres: [<code>ulica, numer, kod, miejscowosc</code>]<br>
-                Telefon: [<code>telefon</code>]<br>
+                [<code>nazwa miesiąca Twoich urodzin</code>]<br>
             </p>
             <br><a href='./answer/index.php'>Odpowiedź</a>
         </div>

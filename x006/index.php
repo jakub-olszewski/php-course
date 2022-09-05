@@ -11,16 +11,22 @@
         <div style="margin: 50px">
             <h1>Ćwiczenie <?php echo ( empty($_GET["number"]) ) ? '' : htmlspecialchars($_GET["number"]) ?></h1>
             <p>
-                Utwórz zmienne <code>nazwaSzkoly, ulica, numer, kod, miejscowosc, telefon</code>
-                <br>Na początku kodu należy użyć komentarza blokowego zawierającego imię oraz nazwisko.
-                <br>Przed każdą zmienną należy użyć komentarza linii zawierający typ zmiennej.
+                Napisz skrypt sprawdzający czy podana rok jest przestępny.
+                <br>Jeśli liczba (rok) spełnia poniższe warunki to jest to rok przystępny:
+                <br>* reszta z dzielenia przez 4 równa jest zero
+                <br>* reszta z dzielenia przez 100 równa jest zero
+                <br>* reszta z dzielenia przez 400 równa jest zero
                 <br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>.
-                <br>W przeglądarce powinna się wyświetlić następującą treść z użyciem odpowiednich zmiennych:
                 <br><br>
-                Szkoła: [<code>nazwaSzkoly</code>]<br>
-                Adres: [<code>ulica, numer, kod, miejscowosc</code>]<br>
-                Telefon: [<code>telefon</code>]<br>
-            </p>
+                Przykład:
+                <br>
+                <code>
+                    <br>$rok = 2022;
+                    <br>...
+                </code>
+                <br><br>Wynik wykonania:<br>
+                <br>Rok 2022 nie jest przystępny.
+            </p><code></code>
             <br><a href='./answer/index.php'>Odpowiedź</a>
         </div>
     </body>
