@@ -28,7 +28,8 @@
 		<h3 style="margin-left: 30px;">
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="history.back()"><</button>
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="location.href='index.php';">Wykonaj</button>
-			<font name="breakline" size="+2" style="margin-right: 20px;"><?php echo $_GET['title'] ?></font><code name="breakline" >Plik: <?php echo getcwd(); ?>/index.php</code>
+			<font name="breakline" size="+2" style="margin-right: 20px;"><?php echo $_GET['title'] ?></font>
+			<!-- <code name="breakline" >Plik: <?php echo getcwd(); ?>/index.php</code> -->
 		</h3>
 
 		<textarea id='editor'>
