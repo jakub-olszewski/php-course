@@ -83,9 +83,23 @@
                 createOneExercise('3.2',6);
                 createExample(3,'Instrukcja switch',20);
                 createOneExercise('3.3',7);
+                createOneExercise('3.4',8);
                 createExample(3,'Operator warunkowy ',21);
-
-
+                createExample(3,'Pętle - Pętla for ',22);
+                createOneExercise('3.5',9);
+                createExample(3,'Pętle - Pętla while ',23);
+                createExample(3,'Pętle - Pętla do...while ',24);
+                createExample(3,'Pętle - Pętla foreach ',25);
+                createOneExercise('3.6',10);
+                createOneExercise('3.7',11);
+                createOneExercise('3.8',12);
+                createOneExercise('3.9',13);
+                createExample(3,'Instrukcja break ',26);
+                createExample(3,'Instrukcja continue ',27);
+                createExample(3,'Naprzemienne bloki kodu PHP i HTML',28);
+                createOneExercise('3.10',14);
+                createOneExercise('3.11',15);                
+                createOneExercise('3.12',16);
 /**
             title("Struktura języka JavaScript");
                 createExamples(3,'JavaScript w HTML',1,2);

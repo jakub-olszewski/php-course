@@ -1,4 +1,4 @@
 <?
-	/* wywołanie funkcji echo */
+	/* wywołanie polecenia echo */
 	echo "Mój pierwszy skrypt PHP";
 ?>

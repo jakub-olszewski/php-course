@@ -1,4 +1,4 @@
 <?php
-	// wywołanie funkcji echo z <?php 
+	// wywołanie polecenia echo z <?php 
 	echo "Mój pierwszy skrypt PHP";
 ?>
