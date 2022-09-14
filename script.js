@@ -1,5 +1,7 @@
 window.onresize = doALoadOfStuff;
 
+var exerciseCounter = 0;
+
 function doALoadOfStuff() {
     console.log(window.innerWidth);
     var elements = document.getElementsByName('breakline');
@@ -50,15 +52,20 @@ function createOneExercise(dzial,startStop){
     createExercise(dzial,startStop,startStop);
 }
 
+function createOneExercise(dzial){
+    createExercise(dzial,1,1);
+}
+
 function createExercise(dzial,start, stop){
     var positions = 3;
     // document.write("<br>");
     for(var i = start ; i<=stop ; i++)
     {
         //count zeros
-        var countZeros = positions-String(i).length;
+        var countZeros = positions-String(exerciseCounter).length;
         var title = dzial;//+"."+i;
-        document.write("<div class='collapsible-todo'><a href='x"+getZeros(countZeros)+i+"/index.php?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
+        document.write("<div class='collapsible-todo'><a href='x"+getZeros(countZeros)+exerciseCounter+"/index.php?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
+        exerciseCounter++;
     }
 }
 
