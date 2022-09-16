@@ -83,9 +83,9 @@
                 createExample(3,'Instrukcja switch',20);
                 createOneExercise('3.2');
                 createOneExercise('3.3');
-                createOneExercise('3.4');
                 createExample(3,'Operator warunkowy ',21);
                 createExample(3,'Pętle - Pętla for ',22);
+                createOneExercise('3.4');
                 createOneExercise('3.5');
                 createExample(3,'Pętle - Pętla while ',23);
                 createExample(3,'Pętle - Pętla do...while ',24);
