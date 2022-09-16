@@ -80,8 +80,8 @@
             title("Instrukcje sterujące");
                 createExamples(3,'Instrukcja warunkowa',19,19);
                 createOneExercise('3.1');
-                createOneExercise('3.2');
                 createExample(3,'Instrukcja switch',20);
+                createOneExercise('3.2');
                 createOneExercise('3.3');
                 createOneExercise('3.4');
                 createExample(3,'Operator warunkowy ',21);
