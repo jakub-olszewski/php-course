@@ -1,6 +1,6 @@
 window.onresize = doALoadOfStuff;
 
-var exerciseCounter = 0;
+var exerciseCounter = 1;
 
 function doALoadOfStuff() {
     console.log(window.innerWidth);
