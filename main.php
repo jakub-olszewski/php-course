@@ -30,6 +30,7 @@
                 }            
             };
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6333595943822086" crossorigin="anonymous"></script>
     </head>
     <body>
         <div style="margin: 5px">
@@ -55,17 +56,18 @@
         <script>
 		
 			title("Wprowadzenie i struktura języka PHP");
-				createExamples(1,'Blok instrukcji PHP',1,4);
+				createExamples(1,'Blok instrukcji PHP',1,4);//4
 				createExamples(1,'Blok PHP w kodzie HTML',5,5);
                 createOneExercise('1.1');
                 // createExercise(1,1,1); 
+            end();
 
             title("Składania języka PHP");
 				createExamples(2,'Komentarze',6,6);
 				createExamples(2,'Zmienne',7,7);
                 createOneExercise('2.1');
                 createExamples(2,'Zmienne predefiniowane',8,8);
-                createExamples(2,'Typy danych',9,11);
+                createExamples(2,'Typy danych',9,11);//3
                 createExamples(2,'Typy danych - Tablice indeksowane',12,12);
                 createExamples(2,'Typy danych - Tablice asocjacyjne',13,13);	
                 createExamples(2,'Typy danych - Tablice wielowymiarowe',14,14);			
@@ -76,6 +78,7 @@
                 createExamples(2,'Operatory',17,17);
                 createExamples(2,'Operatory inkrementacji i dekrementacji',18,18);
                 createOneExercise('2.4');
+            end();
 
             title("Instrukcje sterujące");
                 createExamples(3,'Instrukcja warunkowa',19,19);
@@ -86,10 +89,10 @@
                 createExample(3,'Operator warunkowy ',21);
                 createExample(3,'Pętle - Pętla for ',22);
                 createOneExercise('3.4');
-                createOneExercise('3.5');
                 createExample(3,'Pętle - Pętla while ',23);
                 createExample(3,'Pętle - Pętla do...while ',24);
                 createExample(3,'Pętle - Pętla foreach ',25);
+                createOneExercise('3.5');
                 createOneExercise('3.6');
                 createOneExercise('3.7');
                 createOneExercise('3.8');
@@ -100,20 +103,41 @@
                 createOneExercise('3.10',);
                 createOneExercise('3.11');                
                 createOneExercise('3.12');
-                createOneExercise('3.13');
+            end();
 
             title("Funkcje");
-            title("Funkcje wbudowane");
-            title("Funkcje obsługi plików");
-            title("Obsługa formularzy");
-            title("Pliki cookies i sesje");
-            title("Bazy danych w PHP");
-            title("Biblioteka PDO");
-            title("Wprowadzenie i testy aplikacji");
-            title("Debugowanie aplikacji");
-            title("Komentarze");
-            title("Tworzenie dokumentacji programu");
-            title("Automatyczne generowanie dokumentacji użytkownika");
+                createExamples(4,'Definiowanie funkcji',29,30);
+                createOneExercise('4.1');
+                createExample(4,'Zwracanie wartości przez funkcje',31);
+                createOneExercise('4.2');
+                createExample(4,'Zasięg zmiennych - Zmienne globalne',32);
+                createExamples(4,'Zasięg zmiennych - Instrukcja global',33,34);
+                createOneExercise('4.3');
+                createExample(4,'Zasięg zmiennych - Zmienne lokalne',35);
+                createExamples(4,'Zasięg zmiennych - Zmienne statyczne',36,37);
+                createExample(4,'Argumenty funkcji - przekazywane przez wartość',38);
+                createOneExercise('4.4');
+                createOneExercise('4.5');
+                createOneExercise('4.6');
+                createExample(4,'Argumenty funkcji - przekazywane przez referencję',39);
+                createOneExercise('4.7');
+                createExamples(4,'Argumenty funkcji - domyślne argumenty funkcji',40,41);
+                createOneExercise('4.8');
+            end();
+
+            hideAllTitle();
+
+            // title("Funkcje wbudowane");
+            // title("Funkcje obsługi plików");
+            // title("Obsługa formularzy");
+            // title("Pliki cookies i sesje");
+            // title("Bazy danych w PHP");
+            // title("Biblioteka PDO");
+            // title("Wprowadzenie i testy aplikacji");
+            // title("Debugowanie aplikacji");
+            // title("Komentarze");
+            // title("Tworzenie dokumentacji programu");
+            // title("Automatyczne generowanie dokumentacji użytkownika");
 
 /**
             title("Struktura języka JavaScript");

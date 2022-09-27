@@ -1,6 +1,7 @@
 window.onresize = doALoadOfStuff;
 
 var exerciseCounter = 1;
+var numberTitle = 1;
 
 function doALoadOfStuff() {
     console.log(window.innerWidth);
@@ -45,7 +46,30 @@ function answer() {
 }
 
 function title(title){
-    document.write("<h3>"+title+"</h3>");
+    document.write("<h3 name='title' onclick='showHideTitle("+numberTitle+")'>"+title+"</h3><div id='title-"+numberTitle+"'>");
+    numberTitle++;
+}
+
+function showHideTitle(number){
+    var x = document.getElementById('title-'+number);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+}
+
+function hideAllTitle(){
+    var length = document.getElementsByName("title").length;
+    for(var i=0 ; i < length; i++){
+        showHideTitle(i+1);
+    }
+}
+
+
+
+function end(){
+    document.write("</div>");
 }
 
 function createOneExercise(dzial,startStop){
@@ -64,9 +88,44 @@ function createExercise(dzial,start, stop){
         //count zeros
         var countZeros = positions-String(exerciseCounter).length;
         var title = dzial;//+"."+i;
-        document.write("<div class='collapsible-todo'><a href='x"+getZeros(countZeros)+exerciseCounter+"/index.php?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
+        var url = "x"+getZeros(countZeros)+exerciseCounter+"/index.php";
+        var className = 'collapsible-todo';
+        document.write("<div id='task-"+exerciseCounter+"' class='"+className+"'><a href='"+url+"?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
+        exerciseExist(url,exerciseCounter);
         exerciseCounter++;
     }
+}
+
+function exerciseExist(url,exerciseCounter){
+    var taskElement = document.getElementById("task-"+exerciseCounter);
+    var request = new XMLHttpRequest();  
+    request.open('GET', url, true);
+    request.onreadystatechange = function(){
+        if (request.readyState === 4){
+            if (request.status === 404) {  
+                taskElement.classList.add('collapsible-no-implemented');
+                taskElement.classList.remove('collapsible-todo');
+            }  
+        }
+    };
+    request.send();
+}
+
+function exampleExist(url,counter){
+    var taskElement = document.getElementById("example-"+counter);
+    var request = new XMLHttpRequest();  
+    request.open('GET', url, true);
+    request.onreadystatechange = function(){
+        if (request.readyState === 4){
+            if (request.status === 404) {  
+                taskElement.classList.add('no-implemented');
+                taskElement.classList.remove('line');
+                taskElement.classList.remove('color-odd');
+                taskElement.classList.remove('color-even');                
+            }  
+        }
+    };
+    request.send();
 }
 
 function createProject(name){
@@ -79,7 +138,6 @@ function createExamples(dzial,title,start, stop){
     // document.write("<p>"+title+"</p>");
     document.write('<button type="button" class="collapsible">'+title+'</button>');
     var positions = 3;
-
     document.write('<div class="content">');
     for(var i = start ; i<=stop ; i++)
     {
@@ -87,8 +145,9 @@ function createExamples(dzial,title,start, stop){
         var countZeros = positions-String(i).length;
         var colorLine = i%2==0?"odd":"even";
         var github = '<a href="https://github.com/jakub-olszewski/php-course/blob/main/e'+getZeros(countZeros)+i+'/index.php"><img class="github-button" src="github.png" alt="github" ></a>';
-
-        document.write("<div class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='e"+getZeros(countZeros)+i+"/source.php?title="+encodeURI(title)+"'\"><code>Źródło kodu</code></button></div></div>");
+        var sourceUrl = "e"+getZeros(countZeros)+i+"/source.php?title="+encodeURI(title);
+        document.write("<div id='example-"+i+"' class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='"+sourceUrl+"'\"><code>Źródło kodu</code></button></div></div>");
+        exampleExist(sourceUrl,i);
     }
     document.write('</div>');
 }
