@@ -1,6 +1,6 @@
 <?php
 
-    // zmienna globalna
+    // zmienna globalna, ale nie ma słowa global
     $zm = 1;
 
     /**

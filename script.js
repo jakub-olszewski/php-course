@@ -46,23 +46,56 @@ function answer() {
 }
 
 function title(title){
-    document.write("<h3 name='title' onclick='showHideTitle("+numberTitle+")'>"+title+"</h3><div id='title-"+numberTitle+"'>");
+    document.write("<h3 name='title' onclick='showHideTitle("+numberTitle+")'>"+title+"</h3><div style='display:none' id='title-"+numberTitle+"'>");
     numberTitle++;
 }
 
+function updateCookie(name,value){
+    document.cookie = name + '=' + value;
+}
+
+
 function showHideTitle(number){
+    hideAllTitle();
     var x = document.getElementById('title-'+number);
     if (x.style.display === "none") {
         x.style.display = "block";
-      } else {
+    } else {
         x.style.display = "none";
-      }
+    }
+    updateCookie('title-number',number);
 }
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function clickActiveTitle(){
+    if(getCookie('title-number')!=null){
+        showHideTitle(getCookie('title-number'));
+    }
+}
+
+
 
 function hideAllTitle(){
     var length = document.getElementsByName("title").length;
-    for(var i=0 ; i < length; i++){
-        showHideTitle(i+1);
+    for(var i=1 ; i < length+1; i++){
+
+        var x = document.getElementById('title-'+i);
+        // if (x.style.display === "none") {
+            // x.style.display = "block";
+        // } else {
+            x.style.display = "none";
+        // }
+
     }
 }
 

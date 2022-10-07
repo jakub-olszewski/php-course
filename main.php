@@ -125,9 +125,17 @@
                 createOneExercise('4.8');
             end();
 
-            hideAllTitle();
+            
 
-            // title("Funkcje wbudowane");
+            title("Funkcje wbudowane");
+                createExample(4,'Funkcje tablic',42);
+                createExample(4,'Funkcje sortowania',42);
+                createExample(4,'Funkcja wyszukiwania',42);
+                createExample(4,'Funkcja daty i czasu',42);
+                createExample(4,'Funkcje formatowania ciągów',42);
+                createExample(4,'Funkcje analizowania ciągów znaków',42);
+
+
             // title("Funkcje obsługi plików");
             // title("Obsługa formularzy");
             // title("Pliki cookies i sesje");
@@ -138,6 +146,9 @@
             // title("Komentarze");
             // title("Tworzenie dokumentacji programu");
             // title("Automatyczne generowanie dokumentacji użytkownika");
+
+            // hideAllTitle();
+            clickActiveTitle();
 
 /**
             title("Struktura języka JavaScript");
