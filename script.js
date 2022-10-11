@@ -56,14 +56,15 @@ function updateCookie(name,value){
 
 
 function showHideTitle(number){
-    hideAllTitle();
     var x = document.getElementById('title-'+number);
-    if (x.style.display === "none") {
+    var style = x.style.display;
+    hideAllTitle();
+    if (style == "none") {
         x.style.display = "block";
+        updateCookie('title-number',number);
     } else {
         x.style.display = "none";
     }
-    updateCookie('title-number',number);
 }
 
 function getCookie(name) {
@@ -123,7 +124,7 @@ function createExercise(dzial,start, stop){
         var title = dzial;//+"."+i;
         var url = "x"+getZeros(countZeros)+exerciseCounter+"/index.php";
         var className = 'collapsible-todo';
-        document.write("<div id='task-"+exerciseCounter+"' class='"+className+"'><a href='"+url+"?number="+title+"'><i>Ćwiczenie "+title+"</i></a></div>");
+        document.write("<div id='task-"+exerciseCounter+"' class='"+className+"'><a href='"+url+"?number="+title+"' target='_blank'><i>Ćwiczenie "+title+"</i></a></div>");
         exerciseExist(url,exerciseCounter);
         exerciseCounter++;
     }
@@ -167,6 +168,16 @@ function createProject(name){
 
 }
 
+function openSourceFrame(sourceUrl){
+    document.getElementsByTagName("iframe")[0].className = "fullScreen";
+
+    document.getElementById("main").style.display = "none"; 
+    document.getElementById('source').src = sourceUrl;
+    document.getElementById("source").style.display = "block"; 
+}
+
+
+
 function createExamples(dzial,title,start, stop){
     // document.write("<p>"+title+"</p>");
     document.write('<button type="button" class="collapsible">'+title+'</button>');
@@ -179,7 +190,8 @@ function createExamples(dzial,title,start, stop){
         var colorLine = i%2==0?"odd":"even";
         var github = '<a href="https://github.com/jakub-olszewski/php-course/blob/main/e'+getZeros(countZeros)+i+'/index.php"><img class="github-button" src="github.png" alt="github" ></a>';
         var sourceUrl = "e"+getZeros(countZeros)+i+"/source.php?title="+encodeURI(title);
-        document.write("<div id='example-"+i+"' class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='"+sourceUrl+"'\"><code>Źródło kodu</code></button></div></div>");
+        // document.write("<div id='example-"+i+"' class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"location.href='"+sourceUrl+"'\"><code>Źródło kodu</code></button></div></div>");
+        document.write("<div id='example-"+i+"' class=\"line color-"+colorLine+"\" ><div class=\"line-left\"><a href='e"+getZeros(countZeros)+i+"/index.php'>Przykład "+dzial+"."+i+"</a></div>"+github+"<div class=\"line-right\"><button class=\"source-button\" onclick=\"openSourceFrame('"+sourceUrl+"')\"><code>Źródło kodu</code></button></div></div>");
         exampleExist(sourceUrl,i);
     }
     document.write('</div>');

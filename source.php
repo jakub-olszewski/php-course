@@ -20,13 +20,22 @@
 		<script type="text/javascript" src="../codemirror/mode/css/css.js"></script>
 		<script type="text/javascript" src="../codemirror/mode/clike/clike.js"></script>
 
+
+
 	</head>
 	<body style="overflow: hidden;">
-
+		<script type="text/javascript">
+			function closeSourceFrame()
+			{
+				window.top.document.getElementById("main").style.display = "block"; 
+				window.top.document.getElementById("source").style.display = "none"; 
+				window.top.document.document.getElementById("source").className = ""; 
+			}
+		</script>
 		
 
 		<h3 style="margin-left: 30px;">
-			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="history.back()"><</button>
+			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="closeSourceFrame()">Zamknij</button>
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="location.href='index.php';">Wykonaj</button>
 			<font name="breakline" size="+2" style="margin-right: 20px;"><?php echo $_GET['title'] ?></font>
 			<!-- <code name="breakline" >Plik: <?php echo getcwd(); ?>/index.php</code> -->

@@ -264,3 +264,17 @@ code {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.fullScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.CodeMirror {
+  padding: 0px !important;
+  height: 85% !important;
+}
