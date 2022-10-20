@@ -17,7 +17,7 @@
                 </ul>           
                 <br><br>Należy użyć w wywołaniu funkcji przykładów, pojednym z każdego przypadku, w zależności od użycia wartości domyślnej.
                 <br><br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>
-                <br><br>Uwaga. Pomocna może okazać się funkcja <code>rand(od,do)</code> oraz <code>unset(tablica[index])</code>
+                
                 <!--<a href="https://www...">(więcej)</a> -->
             </p><code></code>
         </div>
