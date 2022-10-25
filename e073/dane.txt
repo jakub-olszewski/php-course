@@ -1,0 +1,1 @@
+Określenie deskryptor pliku jest używane głównie w systemach operacyjnych zgodnych z normą POSIX. W terminologii Microsoft Windows używane jest określenie 'uchwyt pliku' (ang. file handle).

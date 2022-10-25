@@ -137,10 +137,23 @@
                         createOneExercise('5.4');
                         createExamples(4,'Funkcje formatowania ciągów',49,54);
                         createOneExercise('5.5');
-                        // createExample(4,'Funkcje analizowania ciągów znaków',50);
+                        createExamples(4,'Funkcje analizowania ciągów znaków',55,62);
+                        createOneExercise('5.6');
                     end();
 
-                    // title("Funkcje obsługi plików");
+                    title("Funkcje obsługi plików");
+                        createExamples(4,'Dołączanie plików',63,64);
+                        createExamples(4,'Operacje na plikach',65,76);
+                        createOneExercise('6.1');
+                        createOneExercise('6.2');
+                        createOneExercise('6.3');
+                        createOneExercise('6.4');
+                        createOneExercise('6.5');
+                        // createExample(4,'Operacje na katalogach',42);
+                        // createExample(4,'Praktyczne zastosowania operacji na plikach',42);
+                        // createExample(4,'Funkcje wyjścia',42);
+
+                    end();
                     // title("Obsługa formularzy");
                     // title("Pliki cookies i sesje");
                     // title("Bazy danych w PHP");
