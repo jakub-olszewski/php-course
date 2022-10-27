@@ -19,6 +19,8 @@
                 <br><br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>.
                 <br><br>Uwaga. Należy utworzyć funkcje <code>camel_case()</code> argumentem będzie ciąg znaków a w wyniku działania zwróci jedno słowo camelCase.
                 <!-- <a href="https://www.w3schools.com/php/func_date_date.asp">(więcej)</a>. -->
+                <br><br>Uwaga. Można użyć pomocniczych funkcji: <code>lcfirst() ucwords() str_replace()</code>.
+
                 <br><br>Przykład:
                 <pre><br>echo camel_case("Nie daj się");
             <br>nieDajSie</pre>
