@@ -19,7 +19,7 @@
                     <li>wyświetli liczbę dni, które pozostały do początku wakacji</li>
                 </ul>           
                 <br><br>Po wykonaniu ćwiczenia należy przesłać plik <code>index.php</code>.
-                <br><br>Uwaga. Należy użyć funkcji <code>date()</code> <a href="https://www.w3schools.com/php/func_date_date.asp">(więcej)</a>.
+                <br><br>Uwaga. Należy użyć funkcji <code>getdate() time() mktime()</code> <a href="https://www.w3schools.com/php/func_date_date.asp">(więcej)</a>.
                 <!--<a href="https://www.w3schools.com/php/func_date_date.asp">(więcej)</a> -->
             </p><code></code>
         </div>

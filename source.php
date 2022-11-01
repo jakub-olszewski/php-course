@@ -41,9 +41,9 @@
 			<!-- <code name="breakline" >Plik: <?php echo getcwd(); ?>/index.php</code> -->
 		</h3>
 
-		<textarea id='editor'>
+		<textarea id='editor' oninput="render()">
 <?php
-    echo file_get_contents('index.php');
+    echo htmlspecialchars(file_get_contents('index.php'), ENT_QUOTES);
 ?>
 		</textarea>
 
@@ -51,6 +51,7 @@
 			var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
 							mode: 'php',
 							lineNumbers: true,
+							
 			});
 			editor.save()
 		</script>
