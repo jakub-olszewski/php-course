@@ -159,9 +159,18 @@
                     title("Obsługa formularzy");
                         createExamples(7,'Formularz HTML',83,84);
                         createExamples(7,'Funkcja isSet()',85,86);
-                        createExamples(7,'Funkcja empty()',87,88);
+                        createExamples(7,'Funkcja empty()',87,90);
+                        createOneExercise('7.1');
+                        createOneExercise('7.2');
+                        createExamples(7,'Przesyłanie plików na serwer',91,92);
+
+                        
                     end();
                     // title("Pliki cookies i sesje");
+                    //     createExamples(8,'Tworzenie pliku cookies',93,93);
+                    //     createExamples(8,'Usuwanie pliku cookies',94,94);
+                    //     createExamples(8,'Zastosowanie plików cookies',95,95);
+                    // end();
                     // title("Bazy danych w PHP");
                     // title("Biblioteka PDO");
                     // title("Wprowadzenie i testy aplikacji");
