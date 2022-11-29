@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="../codemirror/lib/codemirror.css">
 		<link rel="stylesheet" href="../codemirror/doc/docs.css">
+		<link rel="stylesheet" href="../font-awesome.min.css">
 		<link rel="stylesheet" href="../style.css">
 
         <script src="../script.js"></script>
@@ -36,6 +37,9 @@
 
 		<h3 style="margin-left: 30px;">
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="closeSourceFrame()">Zamknij</button>
+			<a href="download.php?file=index.php" target="_new" style="all: unset;">
+				<button  style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;">Pobierz</button>
+			</a>
 			<button style="background: #0a73bd;margin-bottom: 5px;margin-right: 15px;" onclick="location.href='index.php';">Wykonaj</button>
 			<font name="breakline" size="+2" style="margin-right: 20px;"><?php echo $_GET['title'] ?></font>
 			<!-- <code name="breakline" >Plik: <?php echo getcwd(); ?>/index.php</code> -->

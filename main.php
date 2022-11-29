@@ -166,11 +166,17 @@
 
                         
                     end();
-                    // title("Pliki cookies i sesje");
-                    //     createExamples(8,'Tworzenie pliku cookies',93,93);
-                    //     createExamples(8,'Usuwanie pliku cookies',94,94);
-                    //     createExamples(8,'Zastosowanie plików cookies',95,95);
-                    // end();
+                    title("Pliki cookies i sesje");
+                        createExamples(8,'Tworzenie pliku cookies',93,93);
+                        createExamples(8,'Usuwanie pliku cookies',94,94);
+                        createOneExercise('8.1');
+                        createExamples(8,'Zastosowanie plików cookies',95,98);
+                        createOneExercise('8.2');
+                        createOneExercise('8.3');
+                        // createExamples(8,'Sesje',99,101);
+                        // createExamples(8,'Praktyczne zastosowania sesji',102,107);
+                        // createOneExercise('8.4');
+                    end();
                     // title("Bazy danych w PHP");
                     // title("Biblioteka PDO");
                     // title("Wprowadzenie i testy aplikacji");
