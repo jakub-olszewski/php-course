@@ -13,6 +13,7 @@
                 echo "Dodanie komentarza powiodło sie. ";
                 echo '<a href="javascript:history.go(-1)">Wróć</a>';
             }  
+            fclose($op);
         }
     }
 

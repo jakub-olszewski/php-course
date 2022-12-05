@@ -173,9 +173,9 @@
                         createExamples(8,'Zastosowanie plików cookies',95,98);
                         createOneExercise('8.2');
                         createOneExercise('8.3');
-                        // createExamples(8,'Sesje',99,101);
-                        // createExamples(8,'Praktyczne zastosowania sesji',102,107);
-                        // createOneExercise('8.4');
+                        createExamples(8,'Sesje',99,100);
+                        createExamples(8,'Praktyczne zastosowania sesji',101,105);
+                        createOneExercise('8.4');
                     end();
                     // title("Bazy danych w PHP");
                     // title("Biblioteka PDO");
