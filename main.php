@@ -181,10 +181,13 @@
                         createExamples(9,'Nawiązanie połączenia',106,106);
                         createExamples(9,'Kończenie połączenia',107,107);
                         createOneExercise('9.1');
-                        createExamples(9,'Zapytania do bazy danych',108,111);
+                        createExamples(9,'Zapytania do bazy danych',108,110);
                         createOneExercise('9.2');
                         createOneExercise('9.3');
-                        // createExamples(9,'Wstawianie do bazy danych',112,120);
+                        createExamples(9,'Wstawianie do bazy danych',111,111);
+                        createOneExercise('9.4');
+                        createExamples(9,'Aktualizowanie danych',112,112);
+                        createOneExercise('9.5');
                         // createExamples(9,'Klauzula WHERE',108,110);
                     end();
                     // title("Biblioteka PDO");
