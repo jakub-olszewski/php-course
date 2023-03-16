@@ -203,7 +203,12 @@
                         createExamples(9,'Usuwanie danych',120,121);
                         createOneExercise('9.10');
                     end();
-                    // title("Biblioteka PDO");
+                    title("Biblioteka PDO");
+                        createExamples(10,'Nawiązanie połączenia',122,122);
+                        createExamples(10,'Kończenie połączenia',123,123);
+                        createExamples(10,'Pobieranie danych',124,124);
+                        createOneExercise('10.1');
+                    end();
                     // title("Wprowadzenie i testy aplikacji");
                     // title("Debugowanie aplikacji");
                     // title("Komentarze");
