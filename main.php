@@ -208,6 +208,8 @@
                         createExamples(10,'Kończenie połączenia',123,123);
                         createExamples(10,'Pobieranie danych',124,124);
                         createOneExercise('10.1');
+                        createExamples(10,'Aktualizacja danych',125,125);
+                        createOneExercise('10.2');
                     end();
                     // title("Wprowadzenie i testy aplikacji");
                     // title("Debugowanie aplikacji");
